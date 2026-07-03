@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Will You Forgive Me?</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#ffd6e7,#fff3f7,#ffe8f0);
+overflow:hidden;
+
+}
+
+.card{
+
+background:rgba(255,255,255,.25);
+backdrop-filter:blur(18px);
+padding:60px;
+border-radius:30px;
+box-shadow:0 15px 50px rgba(0,0,0,.15);
+text-align:center;
+width:90%;
+max-width:700px;
+
+}
+
+h1{
+
+font-family:"Great Vibes",cursive;
+font-size:70px;
+color:#ff3f7f;
+margin-bottom:20px;
+
+}
+
+p{
+
+font-size:22px;
+color:#555;
+margin-bottom:40px;
+
+}
+
+.buttons{
+
+position:relative;
+height:140px;
+
+}
+
+button{
+
+border:none;
+cursor:pointer;
+border-radius:50px;
+transition:.4s;
+
+}
+
+#yes{
+
+background:#ff4d88;
+color:white;
+font-size:22px;
+padding:18px 45px;
+
+}
+
+#no{
+
+background:white;
+color:#ff4d88;
+font-size:22px;
+padding:18px 45px;
+margin-left:20px;
+
+}
+
+#result{
+
+display:none;
+margin-top:40px;
+font-size:35px;
+font-family:"Great Vibes";
+color:#d6336c;
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>Will You Forgive Me?</h1>
+
+<p>
+No matter what happens, you'll always be special to me.
+</p>
+
+<div class="buttons">
+
+<button id="yes" onclick="yesClick()">
+Yes ❤️
+</button>
+
+<button id="no" onclick="growYes()">
+No 💔
+</button>
+
+</div>
+
+<div id="result">
+Thank You ❤️<br>
+I Promise To Love You Better Every Day 🌹
+</div>
+
+</div>
+
+<script>
+
+let size=22;
+let padding=45;
+let noSize=22;
+let click=0;
+
+function growYes(){
+
+click++;
+
+size+=8;
+padding+=12;
+noSize-=2;
+
+let yes=document.getElementById("yes");
+let no=document.getElementById("no");
+
+yes.style.fontSize=size+"px";
+yes.style.padding=(18+click*3)+"px "+padding+"px";
+
+if(noSize>10)
+no.style.fontSize=noSize+"px";
+
+if(click>=6){
+
+no.style.display="none";
+
+yes.style.width="100%";
+yes.style.fontSize="40px";
+yes.style.padding="30px";
+
+}
+
+}
+
+function yesClick(){
+
+document.getElementById("result").style.display="block";
+
+}
+
+</script>
+
+</body>
+</html>

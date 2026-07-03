@@ -2,270 +2,86 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>My Letter 💙</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
-
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Page 3 - My Apology</title>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
-
-
-/* Floating Hearts */
-
-.heart{
-
-position:absolute;
-
-font-size:24px;
-
-animation:float 12s linear infinite;
-
-opacity:.6;
-
-}
-
-@keyframes float{
-
-0%{
-
-transform:translateY(100vh);
-opacity:0;
-
-}
-
-20%{
-
-opacity:1;
-
-}
-
-100%{
-
-transform:translateY(-120vh);
-opacity:0;
-
-}
-
-}
-
-/* Letter */
-
-.paper{
-
-width:85%;
-max-width:900px;
-
-background:#fffdf9;
-
-padding:60px;
-
-border-radius:20px;
-
-box-shadow:0 25px 70px rgba(0,0,0,.18);
-
-position:relative;
-
-animation:fade 2s;
-
-}
-
-@keyframes fade{
-
-from{
-
-opacity:0;
-transform:translateY(50px);
-
-}
-
-to{
-
-opacity:1;
-transform:translateY(0);
-
-}
-
-}
-
-h1{
-
-font-family:'Great Vibes',cursive;
-
-font-size:70px;
-
-text-align:center;
-
-color:#d6336c;
-
-margin-bottom:30px;
-
-}
-
-p{
-
-font-size:26px;
-
-line-height:1.9;
-
-color:#444;
-
-text-align:justify;
-
-}
-
-.signature{
-
-margin-top:50px;
-
-text-align:right;
-
-font-family:'Great Vibes';
-
-font-size:42px;
-
-color:#d6336c;
-
-}
-
-.footer{
-
-text-align:center;
-
-margin-top:40px;
-
-font-size:18px;
-
-color:#888;
-
-}
-
- /* Continue Button */
-
-.continue-container{
-    text-align:center;
-    margin-top:50px;
-}
-
-.continue-container button{
-
-    padding:18px 55px;
-
-    border:none;
-
-    border-radius:50px;
-
-    background:linear-gradient(135deg,#ff4f87,#ff7aa2);
-
-    color:white;
-
-    font-size:20px;
-
-    font-weight:600;
-
-    cursor:pointer;
-
-    transition:.4s;
-
-    box-shadow:0 10px 30px rgba(255,79,135,.4);
-
-}
-
-.continue-container button:hover{
-
-    transform:translateY(-5px) scale(1.08);
-
-    box-shadow:0 20px 40px rgba(255,79,135,.6);
-
-}  
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
+*{margin:0;padding:0;box-sizing:border-box}
 body{
-
-height:100vh;
-
-display:flex;
-justify-content:center;
-align-items:center;
-
-background:linear-gradient(135deg,#ffe6ec,#fff7fb,#ffeef5);
-
-overflow:hidden;
-
-font-family:'Cormorant Garamond',serif;
-
+font-family:Poppins,sans-serif;
+background:linear-gradient(135deg,#ffd6e8,#fff6fa,#ffe8f1);
+min-height:100vh;display:flex;align-items:center;justify-content:center;
+overflow-x:hidden;padding:40px;
 }
-   
+body:before{
+content:"❤️ 🌸 ❤️ 🌹 ❤️";
+position:fixed;inset:0;
+font-size:38px;opacity:.08;display:flex;align-items:center;justify-content:center;
+letter-spacing:40px;pointer-events:none;
+}
+.paper{
+background:#fffdfb;
+max-width:900px;width:100%;
+padding:50px;border-radius:24px;
+box-shadow:0 20px 60px rgba(0,0,0,.15);
+animation:fade .9s ease;
+}
+@keyframes fade{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
+h1{
+font-family:"Great Vibes",cursive;
+font-size:64px;color:#d6336c;text-align:center;margin-bottom:25px;
+}
+p{
+font-size:20px;line-height:2;color:#444;text-align:justify;
+}
+.signature{
+margin-top:40px;text-align:right;
+font-family:"Great Vibes",cursive;
+font-size:40px;color:#d6336c;
+}
+.btnwrap{text-align:center;margin-top:45px}
+button{
+border:none;padding:18px 48px;border-radius:40px;
+background:linear-gradient(135deg,#ff4f87,#ff7ba8);
+color:#fff;font-size:20px;font-weight:600;
+cursor:pointer;transition:.3s;
+box-shadow:0 12px 30px rgba(255,79,135,.4);
+}
+button:hover{transform:scale(1.06)}
+.footer{text-align:center;color:#888;margin-top:20px}
 </style>
-
 </head>
-
 <body>
-
-<span class="heart" style="left:5%;animation-duration:10s;">💙</span>
-<span class="heart" style="left:18%;animation-duration:14s;">🌼</span>
-<span class="heart" style="left:35%;animation-duration:11s;">💙</span>
-<span class="heart" style="left:52%;animation-duration:15s;">🌼</span>
-<span class="heart" style="left:70%;animation-duration:12s;">💙</span>
-<span class="heart" style="left:88%;animation-duration:13s;">🌼</span>
-<span class="heart" style="left:5%;animation-duration:10s;">💙</span>
-<span class="heart" style="left:15%;animation-duration:14s;">🌼</span>
-<span class="heart" style="left:65%;animation-duration:11s;">💙</span>
-<span class="heart" style="left:42%;animation-duration:15s;">🌼</span>
-<span class="heart" style="left:90%;animation-duration:12s;">💙</span>
-<span class="heart" style="left:99%;animation-duration:13s;">🌼</span>
-
 <div class="paper">
-
 <h1>My Heartfelt Apology</h1>
-
 <p>
-
-My Dearest,
-
+My Dearest,<br><br>
+If you are reading this, thank you for giving me a few moments of your time.
+I know I made mistakes, and I know my actions caused you pain. For that, I am truly sorry.
+There is no excuse for hurting someone who means so much to me.
 <br><br>
-
-If you're reading this, thank you for giving me a little more of your time.
-
-I know that my words or actions have hurt you, and I truly regret that. Hurting someone I care about so deeply is the last thing I ever wanted.
-
-Every day since then, I've thought about what happened and wished I could go back and make better choices.
-
-I'm not writing this to ask you to forget everything overnight or to erase your pain. I only want you to know that I understand my mistake, and I'm genuinely sorry.
-
-Losing your smile because of something I did has been one of the hardest things to face.
-
-I promise not to show anything to anyone, and its my last word, and to never take your words for granted.
-
-Whether you choose to forgive me today, tomorrow, or someday in the future, I will always be grateful for every beautiful memory we've shared.
-
-Thank you for reading my heart.
-
+Every day I think about what happened and wish I had chosen better words and better actions.
+I can't change the past, but I can learn from it and become a better person.
+<br><br>
+You have brought happiness, comfort, and unforgettable memories into my life.
+No matter what happens, those memories will always be precious to me.
+<br><br>
+I am not asking you to forget everything instantly.
+I am only asking for one chance to show you that I can do better.
+Thank you for reading what my heart has been trying to say.
 </p>
 
 <div class="signature">
-
-With Love,<br>
-MURGI 💙
-<div class="continue-container">
-    <button onclick="location.href='page4.html'">
-        Continue ❤️
-    </button>
+With Love,<br>Your Name ❤️
 </div>
+
+<div class="btnwrap">
+<button onclick="location.href='page4.html'">Continue ❤️</button>
 </div>
 
 <div class="footer">
-
-"Some mistakes deserve an apology. Some people deserve forever."
-
+Every word above comes from my heart.
 </div>
-
 </div>
-
 </body>
 </html>
